@@ -1,0 +1,74 @@
+# Theme
+remote_theme: epidrome/cover-card@main
+
+# Title and tag line
+title: 'Lena Baloch'
+description: 'new website coming soon. in the meantime hit me up on'
+
+# Images
+# avatar: 'avatar.jpg'
+background: 'background.webp'
+favicon: 'favicon.ico'
+
+# Online profiles
+#blog_url: ''
+#codepen: ''
+#dribbble: 'mydribbble'
+email: 'mail@lenalotus.com'
+#facebook: 'myfacebook'
+#github-user: ''
+#gitlab-user: ''
+instagram: 'lotus.lena'
+#lastfm: ''
+#linkedin: 'mylinkedin'
+#medium:  ''
+#messenger: ''
+#pinterest: 'mypinterest'
+#reddit: ''
+#rubygems: ''
+#soundcloud: ''
+#stack-overflow: ''
+#steam: ''
+#tumblr: ''
+#twitter: 'mytwitter'
+#vk: ''
+#weibo: ''
+#youtube: ''
+
+social-links-order: [github-user, facebook, twitter, instagram, tumblr, pinterest, linkedin, youtube, vk, weibo, dribbble, messenger, blog_url, email]
+
+# Yaml manifest of supported social links
+# Requirements:
+# `name`
+#     - plain-text name of the site (e.g. twitter)
+#     - **mandatory**
+# `url-pattern`
+#     - site URL pattern containing a placeholder string (e.g. twitter.com/__USERNAME__)
+#     - placeholder will be replaced by username or value specified in _config.yml (e.g. twitter.com/mytwitter)
+#     - **mandatory**
+# `url-scheme`
+#     - the hardcoded URI/URN url-scheme (e.g. https://)
+#     - can be one of: ['https://', 'http://', 'mailto:']
+#     - defaults to '//'
+#     - **optional**
+# `icon-class`
+#     - the font awesome icon class names
+#     - font-awesome free and supports `fas` (solid) and `fab` (brands) styles
+#     - defaults to `fab` style and uses value of `name` attribute (e.g. fab fa-2x fa-twitter)
+#     - **optional**
+social-links:
+  - name: facebook213
+    url-pattern: facebook.com/__USERNAME__
+    icon-class: fab fa-2x fa-facebook-f
+
+  - name: instagram
+    url-pattern: instagram.com/__USERNAME__
+    icon-class: fab fa-2x fa-instagram
+
+  - name: email
+    url-scheme: 'mailto:'
+    url-pattern: '__USERNAME__'
+    icon-class: far fa-2x fa-envelope-open
+
+
+exclude: [.ruby-version, .gitignore, cover-card.gemspec, Gemfile, Gemfile.lock, LICENSE, README.md]
