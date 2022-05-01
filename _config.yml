@@ -5,6 +5,9 @@ remote_theme: epidrome/cover-card@main
 title: 'Lena Baloch'
 description: 'new website coming soon. in the meantime hit me up on'
 
+url: "https://lenalotus.com"
+baseurl: "/lena-website"
+
 # Images
 # avatar: 'avatar.jpg'
 background: 'background.webp'
