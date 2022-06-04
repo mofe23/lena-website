@@ -1,5 +1,13 @@
+$textcolor: rgba(210, 176, 210, 0.66);
+
+@font-face {
+    font-family: "Century";
+    src: url("century_gothic_std_regular.otf") format("opentype");
+}
+
+
 body {
-    font-family: Helvetica,Arial,sans-serif;
+    font-family: Century,Arial,sans-serif;
     background-color: rgba(0, 0, 0, 0);
     position: absolute;
     top: 0;
@@ -16,8 +24,8 @@ body {
     left: 0;
     min-height: 100%;
     min-width: 1024px;
-    width: 100%;
-    height: auto;
+    width: auto;
+    height: 100%;
     position: fixed;
     display: block;
     z-index: -999;
@@ -26,23 +34,24 @@ body {
 #avatar {
     height: 180px;
     border-radius: 100%;
-    border: 3px solid white;
+    border: 3px solid $textcolor;
     margin-bottom: 40px;
 }
 h1 {
-    color: white;
+    color: $textcolor;
     font-weight: normal;
-    letter-spacing: 0.1em;
-    font-size: 4em;
-    font-family: Helvetica,Arial,sans-serif;
+    letter-spacing: 0.0em;
+    font-size: 1.3em;
+    //font-family: Helvetica,Arial,sans-serif;
 }
 h3 {
-    padding: 30px;
-    color: white;
-    font-weight: bold;
+    color: $textcolor;
+    padding: 10px;
+    font-weight: normal;
+    font-size: 1em;
 }
 .content {
-    padding-top: 50px;
+    padding-top: 80px;
     background-color: rgba(0, 0, 0, 0);
     text-align: center;
 }
@@ -54,24 +63,24 @@ ul {
 li {
     border-radius: 100%;
     border: 2px transparent;
-    color: white;
+    color: $textcolor;
     margin: 8px;
     display: inline-block;
     list-style: none;
-    padding: 10px;
+    padding: 1px;
 }
 li:hover {
-    color: white;
-    text-decoration: none;
+    color: $textcolor;
+    //text-decoration: none;
     -webkit-transition: 500ms;
     -moz-transition: 500ms;
     transition: 500ms;
-    background-color: rgba(0, 0, 0, 0.25);
 }
 a {
     color: white;
     text-decoration: none;
 }
+
 
 .social-link > * {
     vertical-align: middle;
@@ -82,9 +91,9 @@ a {
 }
 .social-network {
     display: inline-block;
-    color: white;
-    font-family: Helvetica,Arial,sans-serif;
-    font-weight: normal;
+    color: $textcolor;
+    font-size: 1em;
+    text-decoration: underline;
 }
 
 @media (max-width: 450px) {
@@ -95,7 +104,7 @@ a {
     li {
         border-radius: 0;
         border: none;
-        color: white;
+        color: $textcolor;
         display: block;
         list-style: none;
         margin: 10px 0;
@@ -118,7 +127,7 @@ a {
         -moz-transition: 500ms;
         transition: 500ms;
         background-color: rgba(0, 0, 0, 0.5);
-        color: white;
+        color: $textcolor;
         text-decoration: none;
     }
 

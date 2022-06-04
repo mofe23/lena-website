@@ -3,7 +3,9 @@ remote_theme: epidrome/cover-card@main
 
 # Title and tag line
 title: 'Lena Baloch'
-description: 'new website coming soon. in the meantime hit me up on'
+description: |+
+  new website coming soon (promise) 
+  in the meantime hit me up on:  
 
 url: "https://lenalotus.com"
 # baseurl: "/lena-website"
