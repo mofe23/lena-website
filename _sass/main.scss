@@ -29,7 +29,10 @@ body {
     position: fixed;
     display: block;
     z-index: -999;
-    /*opacity: 0.8;*/
+    @media (min-width: 1084px) {
+        width: 100%;
+        height: auto;
+    }
 }
 #avatar {
     height: 180px;
