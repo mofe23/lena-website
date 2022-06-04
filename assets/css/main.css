@@ -2,7 +2,9 @@
 
 body { font-family: Century,Arial,sans-serif; background-color: rgba(0, 0, 0, 0); position: absolute; top: 0; bottom: 0; right: 0; left: 0; margin: 0; }
 
-#fullscreen { /** Fullscreen Background image: https://css-tricks.com/perfect-full-page-background-image/#aa-css-only-technique-1 */ top: 0; left: 0; min-height: 100%; min-width: 1024px; width: auto; height: 100%; position: fixed; display: block; z-index: -999; /*opacity: 0.8;*/ }
+#fullscreen { /** Fullscreen Background image: https://css-tricks.com/perfect-full-page-background-image/#aa-css-only-technique-1 */ top: 0; left: 0; min-height: 100%; min-width: 1024px; width: auto; height: 100%; position: fixed; display: block; z-index: -999; }
+
+@media (min-width: 1084px) { #fullscreen { width: 100%; height: auto; } }
 
 #avatar { height: 180px; border-radius: 100%; border: 3px solid rgba(210, 176, 210, 0.66); margin-bottom: 40px; }
 
